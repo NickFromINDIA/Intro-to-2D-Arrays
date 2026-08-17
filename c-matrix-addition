@@ -1,0 +1,62 @@
+#include<stdio.h>
+int main(){
+    int arr[100][100],brr[100][100],a,b,c,d;
+    printf("Enter the value of Row of first array:");
+    scanf("%d",&a);
+    printf("Enter the value of coloumn of first array:");
+    scanf("%d",&b);
+    printf("\n");
+    printf("Enter the value of Row of second array:");
+    scanf("%d",&c);
+    printf("Enter the value of coloummn of second array:");
+    scanf("%d",&d);
+    printf("\n");
+     printf("NOW ENTER THE VALUE OF first ARRAY\n");
+    for(int i=0;i<a;i++){
+        for(int j=0;j<b;j++){
+            printf("enter the value of first array at position(%d,%d):",i,j);
+            scanf("%d",&arr[i][j]);
+        }
+        
+    }
+     printf("\n");
+    printf("NOW ENTER THE VALUE OF SECOND ARRAY \n");
+   
+    for(int i=0;i<c;i++){
+        for(int j=0;j<d;j++){
+            printf("enter the value of second array at position(%d,%d):",i,j);
+            scanf("%d",&brr[i][j]);
+        }
+    }
+     printf("\n");
+    printf("Your First array that you have created so far:");
+   
+    for(int i=0;i<a;i++){
+        for(int j=0;j<b;j++){
+            printf("%d  ",arr[i][j]);
+        }
+    }
+     printf("\n");
+    printf("Your second array that you have created so far:");
+
+    for(int i=0;i<c;i++){
+        for(int j=0;j<d;j++){
+            printf("%d  ",brr[i][j]);
+        }
+    }
+    int crr[100][100];
+    for(int i=0;i<a;i++){
+        for(int j=0;j<b;j++){
+            crr[i][j]=arr[i][j]+brr[i][j];
+        }
+    }
+    printf("\n");
+    printf("After addition of both the arrays we get :");
+    for(int i=0;i<a;i++){
+        for(int j=0;j<b;j++){
+            printf("%d  ",crr[i][j]);
+        }
+    }
+
+
+}
